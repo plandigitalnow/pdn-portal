@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="b681bedb-aae3-4f52-a787-9619689e06c5" name="HostEurope Production" url="http://portal.plandigitalnow.com">
+        <fileTransfer rootFolder="/home/voiv5vvt4la6/portal" accessType="SFTP" host="92.205.175.153" port="22" sshConfigId="85c4ba07-17c0-428d-a75c-cefdc70ed54a" sshConfig="voiv5vvt4la6@92.205.175.153:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
