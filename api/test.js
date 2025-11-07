@@ -1,7 +1,7 @@
 // Einfacher Test-Endpoint
 // Aufruf: https://your-project.vercel.app/api/test
 
-export default function handler(req, res) {
+export default async function handler(req, res) {
     // CORS Headers für dein Frontend
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
@@ -20,5 +20,3 @@ export default function handler(req, res) {
         method: req.method
     });
 }
-
-

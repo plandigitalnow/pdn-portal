@@ -2,8 +2,6 @@
 // Testet die Verbindung zur HubSpot API
 // Aufruf: https://your-project.vercel.app/api/hubspot-test
 
-import { Client } from '@hubspot/api-client';
-
 export default async function handler(req, res) {
     // CORS Headers
     res.setHeader('Access-Control-Allow-Origin', '*');
@@ -32,6 +30,9 @@ export default async function handler(req, res) {
                 hint: 'Füge HUBSPOT_ACCESS_TOKEN in Vercel Environment Variables hinzu'
             });
         }
+
+        // Dynamic import für HubSpot Client (wichtig für Vercel!)
+        const { Client } = await import('@hubspot/api-client');
 
         // HubSpot Client initialisieren
         const hubspotClient = new Client({
